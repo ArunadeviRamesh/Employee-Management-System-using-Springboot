@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body align="center" bgcolor="#ADD8E6">
+<style>
+
+    table, th, td {
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    table{
+    margin-top: 200px;
+
+    }
+    tr:hover {background-color: coral;}
+    table {background-color: white;}
+body {
+  background-image:  url("https://png.pngtree.com/thumb_back/fh260/background/20211108/pngtree-abstract-blue-plain-background-with-modern-style-and-dynamic-lines-image_915412.png");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  background-size: auto;
+}
+</style>
+
+                                    <table class="table table-dark table-borderless mb-0" align="center" style="width:60%">
+                                        <thead>
+                                        <tr>
+                                            <td colspan="2" align="center"><b>EMPLOYEE DETAILS</b></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <td scope="col" th:text=" ${id} " align="center"></td>
+                                                                                    </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">First Name</th>
+                                            <td th:text=" ${fname} "align="center"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Last Name</th>
+                                            <td th:text=" ${lname} "align="center"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Email ID</th>
+                                            <td th:text=" ${mail} "align="center"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Business Unit </th>
+                                            <td th:text=" ${bu} "align="center"></td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+</body>
+</html>
